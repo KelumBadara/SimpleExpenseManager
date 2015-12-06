@@ -86,6 +86,19 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
+    @Override
+    protected void onDestroy(){
+        dbhlp.closeDB();
+        super.onDestroy();
+
+    }
+
+    @Override
+    protected void onStop(){
+        dbhlp.closeDB();
+        super.onStop();
+
+    }
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to

@@ -1,6 +1,8 @@
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.control;
 
 
+import java.io.Serializable;
+
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.exception.ExpenseManagerException;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.AccountDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
@@ -10,9 +12,10 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl.InDatabaseTransactionDAO
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 
 /**
- * Created by Subhash on 12/4/2015.
+ * Created by Kelum on 12/4/2015.
  */
-public class PersistentExpenseManager extends ExpenseManager {
+
+public class PersistentExpenseManager extends ExpenseManager implements Serializable {
 
     private DatabaseHelper dbhlp;
 

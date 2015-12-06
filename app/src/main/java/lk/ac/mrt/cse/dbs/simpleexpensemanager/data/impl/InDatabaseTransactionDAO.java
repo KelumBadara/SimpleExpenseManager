@@ -17,7 +17,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 /**
- * Created by Subhash on 12/4/2015.
+ * Created by Kelum on 12/4/2015.
  */
 public class InDatabaseTransactionDAO implements TransactionDAO {
 
