@@ -93,12 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStop(){
-        dbhlp.closeDB();
-        super.onStop();
-
-    }
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
